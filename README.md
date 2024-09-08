@@ -8,6 +8,11 @@ This may be useful for developers looking at access the low-level build API in B
 
 The buildkit frontend image can be found at `ghcr.io/r2d4/llb:1.0.3`.
 
+For an implementation, see the [dacc](https://github.com/r2d4/dacc) project on GitHub.
+
+## Self-hosted compiler
+The frontend is now compiled with [dacc](https://github.com/r2d4/dacc). You can see the build definition in [build/src/main.ts](build/src/main.ts).
+
 ### Motivation
 The Buildkit Gateway service can be difficult to access for languages other than Go. It requires compiling a series of protobuf and gRPC infrastructure that's currently only written in Go. 
 
