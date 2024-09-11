@@ -1,4 +1,4 @@
-import { cacheMount, State } from "dacc";
+import { cacheMount, IState, State } from "dacc";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -15,7 +15,7 @@ async function main() {
         .merge(
             s.parallel(
                 s => s.copy(["go.mod", "go.sum"], ".").run("go mod download").with(cacheMount("/go/pkg/mod")),
-                ...["cmd", "pkg"].map(dir => (s: State) => s.copy(dir, dir))
+                ...["cmd", "pkg"].map(dir => (s: IState) => s.copy(dir, dir))
             )
         )
         .diff(

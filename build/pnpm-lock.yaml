@@ -8,19 +8,22 @@ importers:
 
   .:
     dependencies:
+      '@dacc/oci':
+        specifier: ^0.13.16
+        version: 0.13.16
       dacc:
-        specifier: ^0.13.8
-        version: 0.13.8
+        specifier: ^0.13.16
+        version: 0.13.16
     devDependencies:
       '@types/node':
-        specifier: ^22.5.1
+        specifier: ^22.5.4
         version: 22.5.4
       tsx:
         specifier: ^4.19.0
         version: 4.19.0
       typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
+        specifier: ^5.6.2
+        version: 5.6.2
 
 packages:
 
@@ -40,11 +43,11 @@ packages:
   '@bufbuild/protoplugin@2.0.0':
     resolution: {integrity: sha512-y77IarGNbJfr5YZHQ+biO0O9B8rXicKLLOFRJu9mKr9LYE5/CLIKqonIBfkc/lggCK2YOtinjZJEYb39HymIog==}
 
-  '@dacc/common@0.13.8':
-    resolution: {integrity: sha512-HiPZKeX1zOec+z21Ifz/FK8Lx355Dhi2D09J0TzK/m3MxfC4E04h244r29KczHLHrH3PBWSf+UhSESxuU8gL0A==}
+  '@dacc/common@0.13.16':
+    resolution: {integrity: sha512-cNiQbIUr9jgJg9oWbrLEEQg1Wq485TvcTdYjxu9Ar58PsR0bTxssVkj+KU3pZ7tXvZNCo1JO4tf7SQAQpIKaDw==}
 
-  '@dacc/oci@0.13.8':
-    resolution: {integrity: sha512-w9fQ6ZECqbwIZoim8TA7CHmVxssXY3hc4r7kxnsBtG/znEHs8yW6r74jZqtF7GoRWjmcUsCnuK5c+29IxtmNyg==}
+  '@dacc/oci@0.13.16':
+    resolution: {integrity: sha512-XrvGoiVjnwaFSg5iEAQFX7D72zVVHhSiPVW14B08qYCJeZQ0lqR7IHUSHbkR64nNxiX7xM8MA0LLzQCtMXIRzA==}
 
   '@esbuild/aix-ppc64@0.23.1':
     resolution: {integrity: sha512-6VhYk1diRqrhBAqpJEdjASR/+WVRtfjpqKuNw11cLiaWpAT/Uu+nokB+UJnevzy/P9C/ty6AOe0dwueMrGh/iQ==}
@@ -198,8 +201,8 @@ packages:
     peerDependencies:
       typescript: '*'
 
-  dacc@0.13.8:
-    resolution: {integrity: sha512-w/b7EQ0/C9aMDDF1XD/foFhA1LRf7F8Zv9JFZnnUmmMWEd3e8ehMM8J915TvxPa4edep+Z2b4SKjo/hvLOYjfw==}
+  dacc@0.13.16:
+    resolution: {integrity: sha512-JHXzYo1zMPUSAcnYwknI6jZVHR6VyTUu1ou8cTxahFZzrnGP9BBtLwFDWyyqwWF0N0klch7KBkQA08W9KTNnxA==}
 
   debug@4.3.7:
     resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
@@ -242,8 +245,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typescript@5.5.4:
-    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+  typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -274,11 +277,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@dacc/common@0.13.8': {}
+  '@dacc/common@0.13.16': {}
 
-  '@dacc/oci@0.13.8':
+  '@dacc/oci@0.13.16':
     dependencies:
-      '@dacc/common': 0.13.8
+      '@dacc/common': 0.13.16
 
   '@esbuild/aix-ppc64@0.23.1':
     optional: true
@@ -363,12 +366,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  dacc@0.13.8:
+  dacc@0.13.16:
     dependencies:
       '@bufbuild/protobuf': 2.0.0
       '@bufbuild/protoc-gen-es': 2.0.0(@bufbuild/protobuf@2.0.0)
-      '@dacc/common': 0.13.8
-      '@dacc/oci': 0.13.8
+      '@dacc/common': 0.13.16
+      '@dacc/oci': 0.13.16
       shlex: 2.1.2
       uuid: 10.0.0
     transitivePeerDependencies:
@@ -427,7 +430,7 @@ snapshots:
 
   typescript@5.4.5: {}
 
-  typescript@5.5.4: {}
+  typescript@5.6.2: {}
 
   undici-types@6.19.8: {}
 
